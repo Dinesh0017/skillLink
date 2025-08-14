@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
+import PopularServices from '../components/PopularServices'
 
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
     <>
     <Navbar />
     <Hero />
+    <PopularServices />
     </>
   )
 }
