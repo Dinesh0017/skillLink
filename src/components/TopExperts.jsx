@@ -43,7 +43,7 @@ const TopExperts = () => {
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1 > experts.length - cardsPerPage ? 0 : prev + 1));
   };
-
+  
   return (
     <section className="bg-gray-50 py-12 px-6 relative ">
       <div className="max-w-7xl mx-auto">
