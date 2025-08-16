@@ -5,6 +5,7 @@ import PopularServices from '../components/PopularServices'
 import TopExperts from '../components/TopExperts'
 import PremiumSection from '../components/PremiumSection'
 import BecomeSkillGiver from '../components/BecomeSkillGiver'
+import Footer from '../components/Footer'
 
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
     <TopExperts />
     <BecomeSkillGiver />
     <PremiumSection />
+    <Footer />
     </>
   )
 }
