@@ -31,7 +31,7 @@ const steps = [
 const BecomeSkillGiver = () => {
   return (
     <section className="py-16 px-6 bg-white">
-            <h2 className="text-2xl font-semibold mb-8 ml-54">Become a Skill Giver
+      <h2 className="text-2xl font-semibold ml-6 mb-8">Become a skill Giver
 </h2>
       {/* Steps Grid */}
       <div className="max-w-6xl mx-auto text-center">

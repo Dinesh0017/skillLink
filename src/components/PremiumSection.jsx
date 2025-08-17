@@ -5,7 +5,7 @@ import premiumImg from "../assets/premium logo.png";
 const PremiumSection = () => {
   return (
     <section className="py-12 px-6">
-        <h2 className="text-2xl font-semibold mb-8 ml-54">Go Premium. Unlock Your Full Potential.
+        <h2 className="text-2xl font-semibold ml-6 mb-8">Go Premium. Unlock Your Full Potential.
 </h2>
       <div className="bg-gradient-to-br from-[#B7F8E3] to-[#9CE6C7]  max-w-6xl mx-auto bg-white rounded-2xl shadow-lg p-8 flex flex-col h-full">
 

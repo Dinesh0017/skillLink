@@ -19,19 +19,19 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold">
             <span className="text-white">Skill</span>
-            <span className="text-[#C7F5E1]">Link</span> – Connecting skills with
-            people.
+            <span className="text-[#C7F5E1]">Link</span> – Connecting skills
+            with people.
           </h3>
-          <p className="mt-4 text-sm leading-6 text-white/90">
-            A local skill-sharing marketplace where individuals can offer, learn,
-            and trade skills effortlessly. From baking to coding, repair work to
-            tutoring, find the right person or share your expertise with your
-            community.
+          <p className=" mt-4 text-sm leading-6 text-white/90">
+            A local skill-sharing marketplace where individuals can offer,
+            learn, and trade skills effortlessly. From baking to coding, repair
+            work to tutoring, find the right person or share your expertise with
+            your community.
           </p>
         </div>
 
         {/* Quick Links */}
-        <div className="ml-42">
+        <div className="lg:ml-42  text-center sm:text-left">
           <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm text-white/90">
             {[
@@ -51,16 +51,19 @@ const Footer = () => {
         </div>
 
         {/* Support */}
-        <div className="ml-42">
+        <div className="lg:ml-42  text-center sm:text-left">
           <h4 className="text-lg font-semibold mb-4">Support</h4>
           <ul className="space-y-2 text-sm text-white/90">
-            {["How It Works", "Terms & Conditions", "Privacy Policy", "Help Center"].map(
-              (item) => (
-                <li key={item} className="hover:text-white cursor-pointer">
-                  {item}
-                </li>
-              )
-            )}
+            {[
+              "How It Works",
+              "Terms & Conditions",
+              "Privacy Policy",
+              "Help Center",
+            ].map((item) => (
+              <li key={item} className="hover:text-white cursor-pointer">
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
@@ -71,21 +74,25 @@ const Footer = () => {
         <div className="hidden md:grid grid-cols-[auto_1fr_auto] auto-rows-auto items-center gap-y-3">
           {/* Left: Logo (spans all rows) */}
           <div className="row-span-3">
-            <img src={logo} alt="SkillLink" className="h-16 w-auto drop-shadow" />
+            <img
+              src={logo}
+              alt="SkillLink"
+              className="h-16 w-auto drop-shadow"
+            />
           </div>
 
           {/* Row 1, Right: Socials */}
-          <div className="col-start-3 justify-self-end flex items-center gap-3">
-            <a className="w-9 h-9 grid place-items-center rounded-md bg-black/25 hover:bg-black/35 transition">
+          <div className="col-start-3 justify-self-end flex items-center gap-3 ">
+            <a className="w-9 h-9 grid place-items-center rounded-md bg-black/25 hover:bg-black/35 transition cursor-pointer">
               <FaXTwitter className="text-black" />
             </a>
-            <a className="w-9 h-9 grid place-items-center rounded-md bg-black/25 hover:bg-black/35 transition">
+            <a className="w-9 h-9 grid place-items-center rounded-md bg-black/25 hover:bg-black/35 transition cursor-pointer">
               <FaInstagram className="text-black" />
             </a>
-            <a className="w-9 h-9 grid place-items-center rounded-md bg-black/25 hover:bg-black/35 transition">
+            <a className="w-9 h-9 grid place-items-center rounded-md bg-black/25 hover:bg-black/35 transition cursor-pointer">
               <FaFacebookF className="text-black" />
             </a>
-            <a className="w-9 h-9 grid place-items-center rounded-md bg-black/25 hover:bg-black/35 transition">
+            <a className="w-9 h-9 grid place-items-center rounded-md bg-black/25 hover:bg-black/35 transition cursor-pointer">
               <FaLinkedinIn className="text-black" />
             </a>
           </div>
@@ -129,7 +136,8 @@ const Footer = () => {
           <div className="w-full h-px bg-white/80" />
           <p className="text-sm">© {year} SkillLink | All rights reserved.</p>
           <div className="flex items-center gap-3 text-sm">
-            <FaGlobe /> <span>English</span> <span className="font-semibold">$ USD</span>
+            <FaGlobe /> <span>English</span>{" "}
+            <span className="font-semibold">$ USD</span>
           </div>
         </div>
       </div>
