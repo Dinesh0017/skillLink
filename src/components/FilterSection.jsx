@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const FilterSection = ({ filters, setFilters, handleApply }) => {
   return (
     <div className=" w-full md:w-1/4 p-4 lg:mx-8 lg:ml-18">
@@ -11,9 +10,7 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
         <label className="block text-sm font-medium lg:mb-2">Service</label>
         <select
           value={filters.service || ""}
-          onChange={(e) =>
-            setFilters({ ...filters, service: e.target.value })
-          }
+          onChange={(e) => setFilters({ ...filters, service: e.target.value })}
           className="w-60 border rounded-md px-2 py-1 "
         >
           <option value="">Select Service</option>
@@ -29,9 +26,7 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
         <label className="block text-sm font-medium lg:mb-2">Location</label>
         <select
           value={filters.location || ""}
-          onChange={(e) =>
-            setFilters({ ...filters, location: e.target.value })
-          }
+          onChange={(e) => setFilters({ ...filters, location: e.target.value })}
           className="w-60 border rounded-md px-2 py-1"
         >
           <option value="">Select Location</option>
@@ -47,9 +42,7 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
         <label className="block text-sm font-medium lg:mb-2">Price</label>
         <select
           value={filters.price || ""}
-          onChange={(e) =>
-            setFilters({ ...filters, price: e.target.value })
-          }
+          onChange={(e) => setFilters({ ...filters, price: e.target.value })}
           className="w-60 border rounded-md px-2 py-1"
         >
           <option value="">Select Price Range</option>
@@ -64,9 +57,7 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
         <label className="block text-sm font-medium lg:mb-2">Rating</label>
         <select
           value={filters.rating || ""}
-          onChange={(e) =>
-            setFilters({ ...filters, rating: e.target.value })
-          }
+          onChange={(e) => setFilters({ ...filters, rating: e.target.value })}
           className="w-60 border rounded-md px-2 py-1"
         >
           <option value="">Select Rating</option>
@@ -80,7 +71,9 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
 
       {/* Availability */}
       <div className="mb-8">
-        <label className="block text-sm font-medium lg:mb-2">Availability</label>
+        <label className="block text-sm font-medium lg:mb-2">
+          Availability
+        </label>
         <select
           value={filters.availability || ""}
           onChange={(e) =>
@@ -97,12 +90,14 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
       </div>
 
       {/* Apply Button */}
-      <button
-        onClick={handleApply}
-        className="w-60 bg-green-700 text-white py-2 rounded-md hover:bg-green-800"
-      >
-        Apply Filters
-      </button>
+      <div className="mb-4 flex justify-start">
+        <button
+          onClick={handleApply}
+          className="w-40 bg-[#196C64] text-white py-2 rounded-md hover:bg-green-800 transition-colors shadow-md hover:shadow-lg"
+        >
+          Apply Filters
+        </button>
+      </div>
     </div>
   );
 };
