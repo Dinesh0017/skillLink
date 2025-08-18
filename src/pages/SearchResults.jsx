@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FilterSection from "../components/FilterSection";
 import ResultList from "../components/ResultList";
+import Navbar from "../components/Navbar";
 import {
   cleaningServices,
   plumbingServices,
@@ -24,7 +25,9 @@ const SearchResults = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen">
+    <>
+    <Navbar />
+    <div className="flex flex-col md:flex-row min-h-screen mt-18">
       <FilterSection
         filters={filters}
         setFilters={setFilters}
@@ -32,6 +35,7 @@ const SearchResults = () => {
       />
       <ResultList services={results} />
     </div>
+    </>
   );
 };
 
