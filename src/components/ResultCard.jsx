@@ -4,15 +4,16 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const ResultCard = ({ service }) => {
   return (
-    <div className="border rounded-lg p-4 flex flex-col md:flex-row items-center gap-4 shadow-md hover:shadow-lg transition">
+    <div className=" rounded-lg p-4 flex flex-col md:flex-row items-center gap-4 shadow-lg hover:shadow-lg transition lg:mr-22 lg:-ml-16">
       {/* Service details */}
-      <div className="flex-1">
+      <div className="flex-1 ml-3 leading-7">
         <h3 className="text-lg font-semibold">{service.name}</h3>
         <p className="text-gray-600">{service.desc}</p>
+        <p className="text-green-800">Location: {service.location}</p>
         <p className="text-sm text-gray-500">
           {service.rating} ({service.reviews} reviews)
         </p>
-        <button className="mt-2 px-4 py-2 bg-green-700 text-white rounded-md">
+        <button className="mt-2 px-4 py-1 font-semibold border border-[#196C64] text-[#196C64] rounded-md">
           View Profile
         </button>
       </div>

@@ -2,6 +2,8 @@ import plumb1 from "../assets/plumber.jpg";
 import cleaning1 from "../assets/home-cleaning.jpg";
 import electric1 from "../assets/Electrical-Service.jpg";
 import tutoring1 from "../assets/tutoring.jpg";
+
+
 export const cleaningServices = [
   {
     id: 1,
@@ -9,6 +11,7 @@ export const cleaningServices = [
     desc: "Eco-friendly home cleaning services.",
     rating: 4.9,
     reviews: 123,
+    location: "kandy",
     images: [cleaning1, cleaning1, cleaning1],
   },
   {
@@ -17,6 +20,7 @@ export const cleaningServices = [
     desc: "Deep cleaning and move-out specialists.",
     rating: 4.8,
     reviews: 150,
+    location: "colombo",
     images: [cleaning1, cleaning1, cleaning1],
   },
   {
@@ -25,6 +29,7 @@ export const cleaningServices = [
     desc: "Tailored cleaning services for your needs.",
     rating: 4.6,
     reviews: 90,
+    location: "kandy",
     images: [cleaning1, cleaning1, cleaning1],
   },
   {
@@ -33,6 +38,7 @@ export const cleaningServices = [
     desc: "High-quality cleaning with customer satisfaction.",
     rating: 4.9,
     reviews: 110,
+    location: "colombo",
     images: [cleaning1, cleaning1, cleaning1],
   },
   {
@@ -41,6 +47,7 @@ export const cleaningServices = [
     desc: "Detail-oriented home cleaning.",
     rating: 4.7,
     reviews: 75,
+    location: "kandy",
     images: [cleaning1, cleaning1, cleaning1],
   },
   {
@@ -49,6 +56,7 @@ export const cleaningServices = [
     desc: "Modern cleaning with fragrance finish.",
     rating: 4.8,
     reviews: 102,
+    location: "kandy",
     images: [cleaning1, cleaning1, cleaning1],
   },
 ];
@@ -60,6 +68,7 @@ export const plumbingServices = [
     desc: "24/7 pipe repair service.",
     rating: 4.7,
     reviews: 98,
+    location: "kandy",
     images: [plumb1, plumb1],
   },
   {
@@ -68,7 +77,8 @@ export const plumbingServices = [
     desc: "Leak detection and fixing.",
     rating: 4.6,
     reviews: 120,
-    images: ["../assets/plumber.jpg"],
+    location: "colombo",
+    images: [plumb1, plumb1],
   },
   {
     id: 3,
@@ -76,7 +86,8 @@ export const plumbingServices = [
     desc: "Professional water system installation.",
     rating: 4.8,
     reviews: 87,
-    images: ["../assets/plumber.jpg"],
+    location: "colombo",
+    images: [plumb1, plumb1],
   },
   {
     id: 4,
@@ -84,7 +95,8 @@ export const plumbingServices = [
     desc: "Clogged drain specialists.",
     rating: 4.9,
     reviews: 65,
-    images: ["../assets/plumber.jpg"],
+    location: "kandy",
+    images: [plumb1, plumb1],
   },
   {
     id: 5,
@@ -92,7 +104,8 @@ export const plumbingServices = [
     desc: "Affordable plumbing solutions.",
     rating: 4.5,
     reviews: 150,
-    images: ["../assets/plumber.jpg"],
+    location: "colombo",
+    images: [plumb1, plumb1],
   },
   {
     id: 6,
@@ -100,7 +113,8 @@ export const plumbingServices = [
     desc: "Certified plumbers on call.",
     rating: 4.8,
     reviews: 132,
-    images: ["../assets/plumber.jpg"],
+    location: "colombo",
+    images: [plumb1, plumb1],
   },
 ];
 
@@ -111,6 +125,7 @@ export const electricalServices = [
     desc: "Lighting installation & repair.",
     rating: 4.9,
     reviews: 100,
+    location: "colombo",
     images: [electric1, electric1, electric1],
   },
   {
@@ -119,6 +134,7 @@ export const electricalServices = [
     desc: "Safe wiring solutions.",
     rating: 4.7,
     reviews: 88,
+    location: "colombo",
     images: [electric1, electric1, electric1],
   },
   {
@@ -127,6 +143,7 @@ export const electricalServices = [
     desc: "Quick electrical fixes.",
     rating: 4.6,
     reviews: 75,
+    location: "colombo",
     images: [electric1, electric1, electric1],
   },
   {
@@ -135,6 +152,7 @@ export const electricalServices = [
     desc: "Emergency electricians.",
     rating: 4.8,
     reviews: 130,
+    location: "kandy",
     images: [electric1, electric1, electric1],
   },
   {
@@ -143,6 +161,7 @@ export const electricalServices = [
     desc: "Panel and circuit solutions.",
     rating: 4.7,
     reviews: 95,
+    location: "kandy",
     images: [electric1, electric1, electric1],
   },
   {
@@ -151,6 +170,7 @@ export const electricalServices = [
     desc: "Modern electrical upgrades.",
     rating: 4.9,
     reviews: 140,
+    location: "kandy",
     images: [electric1, electric1, electric1],
   },
 ];
@@ -162,6 +182,7 @@ export const tutoringServices = [
     desc: "Expert math tutoring.",
     rating: 4.9,
     reviews: 210,
+    location: "kandy",
     images: [tutoring1, tutoring1, tutoring1],
   },
   {
@@ -170,6 +191,7 @@ export const tutoringServices = [
     desc: "Learn coding from scratch.",
     rating: 4.8,
     reviews: 180,
+    location: "kandy",
     images: [tutoring1, tutoring1, tutoring1],
   },
   {
@@ -178,6 +200,7 @@ export const tutoringServices = [
     desc: "Language tutoring experts.",
     rating: 4.7,
     reviews: 160,
+    location: "kandy",
     images: [tutoring1, tutoring1, tutoring1],
   },
   {
@@ -186,6 +209,7 @@ export const tutoringServices = [
     desc: "Science simplified.",
     rating: 4.8,
     reviews: 140,
+    location: "kandy",
     images: [tutoring1, tutoring1, tutoring1],
   },
   {
@@ -194,6 +218,7 @@ export const tutoringServices = [
     desc: "Interactive history lessons.",
     rating: 4.6,
     reviews: 120,
+    location: "colombo",
     images: [tutoring1, tutoring1, tutoring1],
   },
   {
@@ -202,6 +227,7 @@ export const tutoringServices = [
     desc: "Test prep specialists.",
     rating: 4.9,
     reviews: 200,
+    location: "colombo",
     images: [tutoring1, tutoring1, tutoring1],
   },
 ];
