@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import FilterSection from "../components/FilterSection";
 import ResultList from "../components/ResultList";
-import Navbar from "../components/Navbar";
 import {
   cleaningServices,
   plumbingServices,
@@ -11,31 +10,43 @@ import {
 
 const SearchResults = () => {
   const [filters, setFilters] = useState({});
-  const [results, setResults] = useState(cleaningServices);
+  const [results, setResults] = useState([]);
 
   const handleApply = () => {
     const skill = filters.service?.toLowerCase() || "";
+    let selected = [];
 
-    if (skill.includes("clean")) setResults(cleaningServices);
-    else if (skill.includes("plumb")) setResults(plumbingServices);
-    else if (skill.includes("elect")) setResults(electricalServices);
+    if (skill.includes("clean")) selected = cleaningServices;
+    else if (skill.includes("plumb")) selected = plumbingServices;
+    else if (skill.includes("elect")) selected = electricalServices;
     else if (skill.includes("tutor") || skill.includes("teach"))
-      setResults(tutoringServices);
-    else setResults([]);
+      selected = tutoringServices;
+    else selected = [
+      ...cleaningServices,
+      ...plumbingServices,
+      ...electricalServices,
+      ...tutoringServices,
+    ]; // show all if no service
+
+    // 🔹 Apply location filter if user entered one
+    if (filters.location) {
+      selected = selected.filter((s) =>
+        s.location?.toLowerCase().includes(filters.location.toLowerCase())
+      );
+    }
+
+    setResults(selected);
   };
 
   return (
-    <>
-    <Navbar />
-    <div className="flex flex-col md:flex-row min-h-screen mt-18">
+    <div className="flex flex-col md:flex-row min-h-screen">
       <FilterSection
         filters={filters}
         setFilters={setFilters}
         handleApply={handleApply}
       />
-      <ResultList services={results} />
+      <ResultList services={results} filters={filters} />
     </div>
-    </>
   );
 };
 

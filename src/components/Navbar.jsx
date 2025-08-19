@@ -52,20 +52,20 @@ const Navbar = () => {
       {isOpen && (
         <div className="sm:hidden bg-white shadow-lg border-t animate-slideDown">
           <div className="px-6 py-4 space-y-4">
-            <a href="#" className="block text-gray-700 font-medium hover:text-green-700">
+            <a href="#" className="block text-gray-700 font-medium hover:text-[#196C64]">
               For Businesses
             </a>
-            <a href="#" className="block text-gray-700 font-medium hover:text-green-700">
+            <a href="#" className="block text-gray-700 font-medium hover:text-[#196C64]">
               Explore
             </a>
-            <a href="#" className="block text-gray-700 font-medium hover:text-green-700">
+            <a href="#" className="block text-gray-700 font-medium hover:text-[#196C64]">
               Become a Pro
             </a>
             <div className="pt-4 border-t flex flex-col space-y-3">
-              <button className="w-full border rounded py-2 text-green-700 hover:bg-green-50 transition">
+              <button className="bg-[#196C64] ml-2 px-4 py-2 rounded-lg text-white cursor-pointer hover:bg-green-800 transition-colors hover:shadow-lg">
                 Log in
               </button>
-              <button className="w-full bg-green-700 text-white rounded py-2 hover:bg-green-800 transition">
+              <button className="w-full bg-[#196C64] text-white rounded py-2 hover:bg-green-800 transition-colors">
                 Sign up
               </button>
             </div>
