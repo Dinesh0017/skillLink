@@ -93,7 +93,7 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
       <div className="mb-4 flex justify-start">
         <button
           onClick={handleApply}
-          className="w-40 bg-[#196C64] text-white py-2 rounded-md hover:bg-green-800 transition-colors shadow-md hover:shadow-lg"
+          className="w-40 cursor-pointer bg-[#196C64] text-white py-2 rounded-md hover:bg-green-800 transition-colors shadow-md hover:shadow-lg"
         >
           Apply Filters
         </button>

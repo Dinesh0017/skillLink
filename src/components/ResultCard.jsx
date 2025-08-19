@@ -17,7 +17,7 @@ const ResultCard = ({ service }) => {
         <p className="text-sm text-gray-500">
           {service.rating} ({service.reviews} reviews)
         </p>
-        <button className="mt-2 px-4 py-1 font-semibold border border-[#196C64] text-[#196C64] rounded-md">
+        <button className="mt-2 px-4 py-1 font-semibold border border-[#196C64] text-[#196C64] rounded-md cursor-pointer">
           View Profile
         </button>
       </div>
@@ -38,10 +38,10 @@ const ResultCard = ({ service }) => {
 
         {/* ✅ Share & Favorite OUTSIDE, bottom-right */}
         <div className="absolute -bottom-2 lg:-left-25 flex space-x-2">
-          <button className="p-2  hover:bg-red-100  hover:text-red-600 transition ">
+          <button className="p-2  hover:bg-red-100  hover:text-red-600 transition cursor-pointer">
             <Heart size={20} />
           </button>
-          <button className="p-2  hover:bg-blue-100 hover:text-blue-600 transition">
+          <button className="p-2  hover:bg-blue-100 hover:text-blue-600 transition cursor-pointer">
             <Share2 size={20} />
           </button>
         </div>
