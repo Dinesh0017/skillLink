@@ -2,7 +2,7 @@ import React from "react";
 
 const FilterSection = ({ filters, setFilters, handleApply }) => {
   return (
-    <div className=" w-full md:w-1/4 p-4 lg:mx-8 lg:ml-18">
+    <div className="w-full md:w-1/4 p-4 lg:mx-8  sticky top-20 h-fit">
       <h3 className="text-lg font-semibold mb-4">Filters</h3>
 
       {/* Service */}
@@ -11,7 +11,7 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
         <select
           value={filters.service || ""}
           onChange={(e) => setFilters({ ...filters, service: e.target.value })}
-          className="w-60 border rounded-md px-2 py-1 "
+          className="w-60 border rounded-md px-2 py-1"
         >
           <option value="">Select Service</option>
           <option value="cleaning">Cleaning</option>

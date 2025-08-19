@@ -7,6 +7,7 @@ import tutoring1 from "../assets/tutoring.jpg";
 export const cleaningServices = [
   {
     id: 1,
+    category: "Cleaning",
     name: "Sparkle Cleaners",
     desc: "Eco-friendly home cleaning services.",
     rating: 4.9,
@@ -16,6 +17,7 @@ export const cleaningServices = [
   },
   {
     id: 2,
+    category: "Cleaning",
     name: "Dust Busters",
     desc: "Deep cleaning and move-out specialists.",
     rating: 4.8,
@@ -25,6 +27,7 @@ export const cleaningServices = [
   },
   {
     id: 3,
+    category: "Cleaning",
     name: "Shine & Scrub",
     desc: "Tailored cleaning services for your needs.",
     rating: 4.6,
@@ -34,6 +37,7 @@ export const cleaningServices = [
   },
   {
     id: 4,
+    category: "Cleaning",
     name: "Spotless Spaces",
     desc: "High-quality cleaning with customer satisfaction.",
     rating: 4.9,
@@ -43,6 +47,7 @@ export const cleaningServices = [
   },
   {
     id: 5,
+    category: "Cleaning",
     name: "Tidy Touch",
     desc: "Detail-oriented home cleaning.",
     rating: 4.7,
@@ -52,6 +57,7 @@ export const cleaningServices = [
   },
   {
     id: 6,
+    category: "Cleaning",
     name: "FreshNest",
     desc: "Modern cleaning with fragrance finish.",
     rating: 4.8,
@@ -64,6 +70,7 @@ export const cleaningServices = [
 export const plumbingServices = [
   {
     id: 1,
+    category: "Plumbing",
     name: "PipeFix",
     desc: "24/7 pipe repair service.",
     rating: 4.7,
@@ -73,6 +80,7 @@ export const plumbingServices = [
   },
   {
     id: 2,
+    category: "Plumbing",
     name: "Leak Masters",
     desc: "Leak detection and fixing.",
     rating: 4.6,
@@ -82,6 +90,7 @@ export const plumbingServices = [
   },
   {
     id: 3,
+    category: "Plumbing",
     name: "Flow Experts",
     desc: "Professional water system installation.",
     rating: 4.8,
@@ -91,6 +100,7 @@ export const plumbingServices = [
   },
   {
     id: 4,
+    category: "Plumbing",
     name: "Drain Doctor",
     desc: "Clogged drain specialists.",
     rating: 4.9,
@@ -100,6 +110,7 @@ export const plumbingServices = [
   },
   {
     id: 5,
+    category: "Plumbing",
     name: "HydroFix",
     desc: "Affordable plumbing solutions.",
     rating: 4.5,
@@ -109,6 +120,7 @@ export const plumbingServices = [
   },
   {
     id: 6,
+    category: "Plumbing",
     name: "PipeLine Pros",
     desc: "Certified plumbers on call.",
     rating: 4.8,
@@ -121,6 +133,7 @@ export const plumbingServices = [
 export const electricalServices = [
   {
     id: 1,
+    category: "Electrical",
     name: "Bright Sparks",
     desc: "Lighting installation & repair.",
     rating: 4.9,
@@ -130,6 +143,7 @@ export const electricalServices = [
   },
   {
     id: 2,
+    category: "Electrical",
     name: "WiredRight",
     desc: "Safe wiring solutions.",
     rating: 4.7,
@@ -139,6 +153,7 @@ export const electricalServices = [
   },
   {
     id: 3,
+    category: "Electrical",
     name: "PowerFix",
     desc: "Quick electrical fixes.",
     rating: 4.6,
@@ -148,6 +163,7 @@ export const electricalServices = [
   },
   {
     id: 4,
+    category: "Electrical",
     name: "ShockShield",
     desc: "Emergency electricians.",
     rating: 4.8,
@@ -157,6 +173,7 @@ export const electricalServices = [
   },
   {
     id: 5,
+    category: "Electrical",
     name: "CircuitCare",
     desc: "Panel and circuit solutions.",
     rating: 4.7,
@@ -166,6 +183,7 @@ export const electricalServices = [
   },
   {
     id: 6,
+    category: "Electrical",
     name: "SafeVolt",
     desc: "Modern electrical upgrades.",
     rating: 4.9,
@@ -178,6 +196,7 @@ export const electricalServices = [
 export const tutoringServices = [
   {
     id: 1,
+    category: "Tutoring",
     name: "Math Masters",
     desc: "Expert math tutoring.",
     rating: 4.9,
@@ -187,6 +206,7 @@ export const tutoringServices = [
   },
   {
     id: 2,
+    category: "Tutoring",
     name: "CodeCamp",
     desc: "Learn coding from scratch.",
     rating: 4.8,
@@ -196,6 +216,7 @@ export const tutoringServices = [
   },
   {
     id: 3,
+    category: "Tutoring",
     name: "LangLab",
     desc: "Language tutoring experts.",
     rating: 4.7,
@@ -205,6 +226,7 @@ export const tutoringServices = [
   },
   {
     id: 4,
+    category: "Tutoring",
     name: "SciZone",
     desc: "Science simplified.",
     rating: 4.8,
@@ -214,6 +236,7 @@ export const tutoringServices = [
   },
   {
     id: 5,
+    category: "Tutoring",
     name: "History Hub",
     desc: "Interactive history lessons.",
     rating: 4.6,
@@ -223,6 +246,7 @@ export const tutoringServices = [
   },
   {
     id: 6,
+    category: "Tutoring",
     name: "ExamEdge",
     desc: "Test prep specialists.",
     rating: 4.9,

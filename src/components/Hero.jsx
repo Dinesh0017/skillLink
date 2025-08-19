@@ -9,7 +9,11 @@ const Hero = () => {
 
   const handleSearch = () => {
     if (query.trim() !== "") {
-      navigate(`/search?skill=${query}`);
+      // encode query to handle spaces like "cleaning services"
+      navigate(`/search?skill=${encodeURIComponent(query.trim())}`);
+    } else {
+      // if empty, go to all services
+      navigate(`/search`);
     }
   };
 
@@ -28,17 +32,21 @@ const Hero = () => {
           Millions of people use SkillLink to turn their ideas into reality.
         </p>
         <div className="flex mt-6 max-w-lg mx-auto bg-white rounded-lg overflow-hidden p-1 relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-black" size={18} />
+          <Search
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-black"
+            size={18}
+          />
           <input
             type="text"
-            placeholder="Search for services"
+            placeholder="Search for services (e.g. Cleaning)"
             className="flex-1 pl-10 pr-2 py-2 rounded-l-lg text-black"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleSearch()}
           />
           <button
             onClick={handleSearch}
-className="bg-[#196C64] ml-2 px-4 py-2 rounded-lg text-white cursor-pointer hover:bg-green-800 transition-colors hover:shadow-lg"
+            className="bg-[#196C64] ml-2 px-4 py-2 rounded-lg text-white cursor-pointer hover:bg-green-800 transition-colors hover:shadow-lg"
           >
             Search
           </button>
@@ -49,4 +57,3 @@ className="bg-[#196C64] ml-2 px-4 py-2 rounded-lg text-white cursor-pointer hove
 };
 
 export default Hero;
-            

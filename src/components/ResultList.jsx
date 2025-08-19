@@ -14,9 +14,11 @@ const ResultList = ({ services, filters }) => {
         </span>
         {filters.location && (
           <>
-            {" "}in
+            {" "}
+            in
             <span className="text-[#196C64] font-semibold">
-              {" "}{`"${filters.location}"`}
+              {" "}
+              {`"${filters.location}"`}
             </span>
           </>
         )}
