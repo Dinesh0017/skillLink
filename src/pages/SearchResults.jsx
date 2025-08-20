@@ -4,12 +4,18 @@ import FilterSection from "../components/FilterSection";
 import ResultList from "../components/ResultList";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
 import {
-  cleaningServices,
-  plumbingServices,
-  electricalServices,
-  tutoringServices,
-} from "../data/servicesData";
+cleaningServices,
+handymanServices,
+trainingServices,
+designServices,
+photographyServices,
+tutoringServices,
+eventPlanningServices,
+petCareServices
+} from "../data/skills.js"
+
 
 const SearchResults = () => {
   const location = useLocation();
@@ -24,16 +30,24 @@ const SearchResults = () => {
     let selected = [];
 
     if (skill.includes("clean")) selected = cleaningServices;
-    else if (skill.includes("plumb")) selected = plumbingServices;
-    else if (skill.includes("elect")) selected = electricalServices;
-    else if (skill.includes("tutor") || skill.includes("teach"))
+    else if (skill.includes("handy")) selected = handymanServices;
+    else if (skill.includes("train")) selected = trainingServices;
+    else if (skill.includes("design")) selected = designServices;
+    else if (skill.includes("photo")) selected = photographyServices;
+    else if (skill.includes("event")) selected = eventPlanningServices;
+    else if (skill.includes("pet")) selected = petCareServices;
+    else if (skill.includes("tutor") || skill.includes("tutoring"))
       selected = tutoringServices;
     else
       selected = [
         ...cleaningServices,
-        ...plumbingServices,
-        ...electricalServices,
         ...tutoringServices,
+        ...handymanServices,
+        ...trainingServices,
+        ...designServices,
+        ...photographyServices,
+        ...eventPlanningServices,
+        ...petCareServices
       ];
 
     if (filters.location) {

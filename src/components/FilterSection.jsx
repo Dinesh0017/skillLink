@@ -15,8 +15,12 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
         >
           <option value="">Select Service</option>
           <option value="cleaning">Cleaning</option>
-          <option value="plumbing">Plumbing</option>
-          <option value="electrical">Electrical</option>
+          <option value="handyman">Handyman</option>
+          <option value="training">Training</option>
+          <option value="design">Design</option>
+          <option value="photography">Photography</option>
+          <option value="event">Event Planning</option>
+          <option value="pet">Pet Care</option>
           <option value="tutoring">Tutoring</option>
         </select>
       </div>
@@ -34,6 +38,7 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
           <option value="kandy">Kandy</option>
           <option value="galle">Galle</option>
           <option value="jaffna">Jaffna</option>
+          <option value="negambo">Negambo</option>
         </select>
       </div>
 
