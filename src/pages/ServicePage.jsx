@@ -18,11 +18,11 @@ import {
 // Map slugs to their service arrays
 const slugMap = {
   "home-cleaning": cleaningServices,
-  "handyman": handymanServices,
+  handyman: handymanServices,
   "personal-training": trainingServices,
   "graphic-design": designServices,
-  "photography": photographyServices,
-  "tutoring": tutoringServices,
+  photography: photographyServices,
+  tutoring: tutoringServices,
   "event-planning": eventPlanningServices,
   "pet-care": petCareServices,
 };
@@ -43,14 +43,14 @@ const ServicePage = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-4xl mx-auto px-6 py-12 mt-10">
-        <h1 className="text-3xl font-bold">{title}</h1>
-        <p className="mt-4 text-gray-600">
+      <div className="max-w-5xl mx-auto px-6 py-12 mt-12 -mb-6">
+        <h2 className="text-2xl font-semibold -mb-4 lg:-ml-32">{title}</h2>
+        <p className="mt-4 text-gray-600 lg:-ml-32">
           This is the details page for <strong>{title}</strong>.
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="max-w-7xl  mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
         {relevantServices.length > 0 ? (
           relevantServices.map((service) => (
             <ServiceCard key={service.id} service={service} />
