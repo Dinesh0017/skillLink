@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import homeCleaning from "../assets/home-cleaning.jpg";
 import handyman from "../assets/handyman.jpg";
 import personalTraining from "../assets/personal-training.jpg";
@@ -9,14 +10,14 @@ import eventPlanning from "../assets/event-planning.jpg";
 import petCare from "../assets/pet-care.jpg";
 
 const services = [
-  { name: "Home Cleaning", img: homeCleaning },
-  { name: "Handyman", img: handyman },
-  { name: "Personal Training", img: personalTraining },
-  { name: "Graphic Design", img: graphicDesign },
-  { name: "Photography", img: photography },
-  { name: "Tutoring", img: tutoring },
-  { name: "Event Planning", img: eventPlanning },
-  { name: "Pet Care", img: petCare },
+  { name: "Home Cleaning", img: homeCleaning, slug: "home-cleaning" },
+  { name: "Handyman", img: handyman, slug: "handyman" },
+  { name: "Personal Training", img: personalTraining, slug: "personal-training" },
+  { name: "Graphic Design", img: graphicDesign, slug: "graphic-design" },
+  { name: "Photography", img: photography, slug: "photography" },
+  { name: "Tutoring", img: tutoring, slug: "tutoring" },
+  { name: "Event Planning", img: eventPlanning, slug: "event-planning" },
+  { name: "Pet Care", img: petCare, slug: "pet-care" },
 ];
 
 const PopularServices = () => {
@@ -25,14 +26,14 @@ const PopularServices = () => {
       <h2 className="text-2xl font-semibold mb-8">Popular Services</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {services.map((service, index) => (
-          <div key={index} className="text-center">
+          <Link key={index} to={`/services/${service.slug}`} className="text-center">
             <img
               src={service.img}
               alt={service.name}
               className="rounded-lg shadow-lg w-full h-40 object-cover hover:scale-105 transition-transform cursor-pointer"
             />
             <p className="mt-2 text-sm font-medium">{service.name}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
@@ -40,4 +41,3 @@ const PopularServices = () => {
 };
 
 export default PopularServices;
-
