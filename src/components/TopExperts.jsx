@@ -28,10 +28,9 @@ const TopExperts = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
-        // mobile
-        setCardsPerPage(1);
+        setCardsPerPage(18);
       } else {
-        setCardsPerPage(4); // desktop
+        setCardsPerPage(12);
       }
     };
 
