@@ -1,7 +1,7 @@
 import React from "react";
-import addFriend from "../../public/assets/add-friend.png";
+import addFriend from "../../public/assets/addFriend.png";
 import list from "../../public/assets/list.png";
-import portfolio from "../../public/assets/portfolio-alert.png";
+import portfolio from "../../public/assets/portfolioAlert.png";
 import negotiation from "../../public/assets/negotiation.png";
 import listen from "../../public/assets/listen.png";
 
