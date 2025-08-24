@@ -1,6 +1,6 @@
 import React from "react";
 import { FaSearch, FaComments, FaBan, FaChartLine, FaGift } from "react-icons/fa";
-import premiumImg from "../../public/assets/premiumLogo.png";
+import premiumImg from "../assets/premiumLogo.png";
 
 const PremiumSection = () => {
   return (

@@ -1,11 +1,11 @@
-import petImg from "../../public/assets/petCare.jpg";
-import cleaning1 from "../../public/assets/homeCleaning.jpg";
-import tutoringImg from "../../public/assets/tutoring.jpg";
-import handymanImg from "../../public/assets/handyman.jpg";
-import trainingImg from "../../public/assets/personalTraining.jpg";
-import designImg from "../../public/assets/graphicDesign.jpg";
-import photoImg from "../../public/assets/photography.jpg";
-import eventImg from "../../public/assets/eventPlanning.jpg";
+import petImg from "../assets/petCare.jpg";
+import cleaning1 from "../assets/homeCleaning.jpg";
+import tutoringImg from "../assets/tutoring.jpg";
+import handymanImg from "../assets/handyman.jpg";
+import trainingImg from "../assets/personalTraining.jpg";
+import designImg from "../assets/graphicDesign.jpg";
+import photoImg from "../assets/photography.jpg";
+import eventImg from "../assets/eventPlanning.jpg";
 
 export const cleaningServices = [
   {

@@ -1,5 +1,5 @@
 import React from "react";
-import bookingImg from "../../public/assets/booking.png";
+import bookingImg from "../assets/booking.png";
 
 const BookingCard = () => {
   return (
