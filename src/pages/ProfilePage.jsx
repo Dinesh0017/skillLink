@@ -32,7 +32,7 @@ const ProfilePage = () => {
           <div className="md:col-span-2">
             <ExpertDetails expert={expert} />
           </div>
-          <div className="md:col-span-1 lg:max-w-xs">
+          <div className="md:col-span-1 lg:max-w-xs lg:ml-18">
             <BookingCard expert={expert} />
           </div>
         </div>
