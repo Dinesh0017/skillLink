@@ -6,7 +6,7 @@ import {
   FaLinkedinIn,
   FaGlobe,
 } from "react-icons/fa6";
-import logo from "../assets/SkillLink logo.png"; // use your logo
+import logo from "../assets/SkillLink-logo.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -68,11 +68,11 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* ---------- BOTTOM SECTION (as per screenshot) ---------- */}
+      {/* ---------- BOTTOM SECTION---------- */}
       <div className="max-w-7xl mx-auto px-6 pb-6">
         {/* Desktop / Tablet layout */}
         <div className="hidden md:grid grid-cols-[auto_1fr_auto] auto-rows-auto items-center gap-y-3">
-          {/* Left: Logo (spans all rows) */}
+          {/* Left: Logo */}
           <div className="row-span-3">
             <img
               src={logo}
