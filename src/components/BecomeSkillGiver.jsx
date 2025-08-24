@@ -1,9 +1,9 @@
 import React from "react";
-import addFriend from "../assets/add-friend.png";
-import list from "../assets/list.png";
-import portfolio from "../assets/portfolio-alert.png";
-import negotiation from "../assets/negotiation.png";
-import listen from "../assets/listen.png";
+import addFriend from "../../public/assets/add-friend.png";
+import list from "../../public/assets/list.png";
+import portfolio from "../../public/assets/portfolio-alert.png";
+import negotiation from "../../public/assets/negotiation.png";
+import listen from "../../public/assets/listen.png";
 
 const steps = [
   {

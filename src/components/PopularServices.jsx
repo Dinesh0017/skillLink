@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import homeCleaning from "../assets/home-cleaning.jpg";
-import handyman from "../assets/handyman.jpg";
-import personalTraining from "../assets/personal-training.jpg";
-import graphicDesign from "../assets/graphic-design.jpg";
-import photography from "../assets/photography.jpg";
-import tutoring from "../assets/tutoring.jpg";
-import eventPlanning from "../assets/event-planning.jpg";
-import petCare from "../assets/pet-care.jpg";
+import homeCleaning from "../../public/assets/home-cleaning.jpg";
+import handyman from "../../public/assets/handyman.jpg";
+import personalTraining from "../../public/assets/personal-training.jpg";
+import graphicDesign from "../../public/assets/graphic-design.jpg";
+import photography from "../../public/assets/photography.jpg";
+import tutoring from "../../public/assets/tutoring.jpg";
+import eventPlanning from "../../public/assets/event-planning.jpg";
+import petCare from "../../public/assets/pet-care.jpg";
 
 const services = [
   { name: "Home Cleaning", img: homeCleaning, slug: "home-cleaning" },

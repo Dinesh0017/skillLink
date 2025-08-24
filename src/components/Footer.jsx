@@ -6,7 +6,7 @@ import {
   FaLinkedinIn,
   FaGlobe,
 } from "react-icons/fa6";
-import logo from "../assets/SkillLink-logo.png";
+import logo from "../../public/assets/SkillLink-logo.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();

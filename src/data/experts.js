@@ -1,9 +1,9 @@
 // src/data/experts.js
-import avatar1 from "../assets/avatar1.png";
-import avatar2 from "../assets/avatar2.png";
-import avatar3 from "../assets/avatar3.png";
-import avatar4 from "../assets/avatar4.png";
-import avatar5 from "../assets/avatar5.png";
+import avatar1 from "../../public/assets/avatar1.png";
+import avatar2 from "../../public/assets/avatar2.png";
+import avatar3 from "../../public/assets/avatar3.png";
+import avatar4 from "../../public/assets/avatar4.png";
+import avatar5 from "../../public/assets/avatar5.png";
 
 export const experts = [
   {

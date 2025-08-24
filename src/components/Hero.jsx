@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import hero from "../assets/hero.png";
+import hero from "../../public/assets/hero.png";
 import { Search } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
