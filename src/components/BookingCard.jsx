@@ -26,7 +26,7 @@ const BookingCard = () => {
           <label className="block text-sm font-medium">Note</label>
           <textarea placeholder="Add a Note" className="w-full mt-1 border rounded-lg p-2 text-sm"></textarea>
         </div>
-        <button type="submit" className="w-full bg-[#196C64] text-white py-2 rounded-lg hover:bg-green-800 transition cursor-pointer">
+        <button type="submit" className="w-full bg-[#196C64] text-white py-2 rounded-lg hover:bg-[#196C64] transition cursor-pointer">
           Book Now
         </button>
       </form>

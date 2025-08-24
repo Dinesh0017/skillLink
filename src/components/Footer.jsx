@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#196C64] text-white">
-      {/* ---------- TOP SECTION (keep as in your design) ---------- */}
+      {/* ---------- TOP SECTION---------- */}
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 py-12 px-6">
         {/* About */}
         <div>

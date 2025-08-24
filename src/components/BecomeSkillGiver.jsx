@@ -5,7 +5,6 @@ import portfolio from "../assets/portfolioAlert.png";
 import negotiation from "../assets/negotiation.png";
 import listen from "../assets/listen.png";
 
-
 const steps = [
   {
     icon: addFriend,
@@ -31,9 +30,8 @@ const steps = [
 
 const BecomeSkillGiver = () => {
   return (
-    <section className="py-16 px-6 bg-white">
-      <h2 className="text-2xl font-semibold ml-6 mb-8">Become a skill Giver
-</h2>
+    <section className="py-8 px-6 bg-white">
+      <h2 className="text-2xl font-semibold lg:ml-28 mb-8">Become a skill Giver</h2>
       {/* Steps Grid */}
       <div className="max-w-6xl mx-auto text-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">

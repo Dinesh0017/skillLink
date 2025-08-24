@@ -19,12 +19,12 @@ const Hero = () => {
 
   return (
     <section
-      className="relative h-[600px] bg-cover bg-center flex items-center justify-center mt-18"
+      className="relative h-[600px] bg-cover bg-center flex items-center justify-center mt-16 mx-auto"
       style={{ backgroundImage: `url(${hero})` }}
     >
       <div className="absolute inset-0 bg-black opacity-25"></div>
 
-      <div className="z-10 p-6 rounded-lg text-center text-white">
+      <div className="z-10 rounded-lg text-center text-white ">
         <h1 className="text-3xl md:text-5xl font-bold">
           Find local professionals for any project
         </h1>

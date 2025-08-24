@@ -4,8 +4,8 @@ import premiumImg from "../assets/premiumLogo.png";
 
 const PremiumSection = () => {
   return (
-    <section className="py-12 px-6">
-        <h2 className="text-2xl font-semibold ml-6 mb-8">Go Premium. Unlock Your Full Potential.
+    <section className="py-8 px-6">
+        <h2 className="text-2xl font-semibold lg:ml-28 mb-8">Go Premium. Unlock Your Full Potential.
 </h2>
       <div className="bg-gradient-to-br from-[#B7F8E3] to-[#9CE6C7]  max-w-6xl mx-auto bg-white rounded-2xl shadow-lg p-8 flex flex-col h-full">
 
@@ -25,7 +25,7 @@ const PremiumSection = () => {
           
           {/* Row 1 */}
           <div className="bg-green-50 p-5 rounded-xl shadow-sm border border-green-100 flex flex-col">
-            <FaSearch className="text-green-700 text-2xl mb-3" />
+            <FaSearch className="text-[#196C64] text-2xl mb-3" />
             <h3 className="font-semibold text-green-900">Priority Search Placement</h3>
             <p className="text-sm text-gray-600 mt-2">
               Be at the top of searches to get noticed first by clients and learners.
@@ -33,7 +33,7 @@ const PremiumSection = () => {
           </div>
 
           <div className="bg-green-50 p-5 rounded-xl shadow-sm border border-green-100 flex flex-col">
-            <FaComments className="text-green-700 text-2xl mb-3" />
+            <FaComments className="text-[#196C64] text-2xl mb-3" />
             <h3 className="font-semibold text-green-900">Direct Chat with Clients</h3>
             <p className="text-sm text-gray-600 mt-2">
               Start instant, secure conversations to close deals faster.
@@ -41,7 +41,7 @@ const PremiumSection = () => {
           </div>
 
           <div className="bg-green-50 p-5 rounded-xl shadow-sm border border-green-100 flex flex-col">
-            <FaBan className="text-green-700 text-2xl mb-3" />
+            <FaBan className="text-[#196C64] text-2xl mb-3" />
             <h3 className="font-semibold text-green-900">No Ads Experience</h3>
             <p className="text-sm text-gray-600 mt-2">
               Work distraction-free with our premium ad-free interface.
@@ -50,7 +50,7 @@ const PremiumSection = () => {
 
           {/* Row 2 */}
           <div className="bg-green-50 p-5 rounded-xl shadow-sm border border-green-100 flex flex-col">
-            <FaChartLine className="text-green-700 text-2xl mb-3" />
+            <FaChartLine className="text-[#196C64] text-2xl mb-3" />
             <h3 className="font-semibold text-green-900">Advanced Analytics</h3>
             <p className="text-sm text-gray-600 mt-2">
               Get detailed insights to track your growth and performance.
@@ -58,7 +58,7 @@ const PremiumSection = () => {
           </div>
 
           <div className="bg-green-50 p-5 rounded-xl shadow-sm border border-green-100 flex flex-col">
-            <FaGift className="text-green-700 text-2xl mb-3" />
+            <FaGift className="text-[#196C64] text-2xl mb-3" />
             <h3 className="font-semibold text-green-900">Exclusive Projects & Offers</h3>
             <p className="text-sm text-gray-600 mt-2">
               Access special jobs and offers before anyone else.
@@ -72,7 +72,7 @@ const PremiumSection = () => {
         {/* 3rd Div: Button & Logo */}
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <button
-            className="bg-green-800 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow hover:bg-green-900 transition">
+            className="bg-[#196C64] text-white px-8 py-3 rounded-lg text-lg font-semibold shadow hover:bg-green-800 transition">
             Try Now
           </button>
           <img

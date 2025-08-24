@@ -2,7 +2,7 @@ import React from "react";
 
 const FilterSection = ({ filters, setFilters, handleApply }) => {
   return (
-    <div className="w-full md:w-1/4 p-4 lg:mx-8  sticky top-20 h-fit">
+    <div className="w-full md:w-1/4 p-6 lg:mx-8  top-20 h-fit ">
       <h3 className="text-lg font-semibold mb-4">Filters</h3>
 
       {/* Service */}
@@ -98,7 +98,7 @@ const FilterSection = ({ filters, setFilters, handleApply }) => {
       <div className="mb-4 flex justify-start">
         <button
           onClick={handleApply}
-          className="w-40 cursor-pointer bg-[#196C64] text-white py-2 rounded-md hover:bg-green-800 transition-colors shadow-md hover:shadow-lg"
+          className="w-40 cursor-pointer bg-[#196C64] text-white py-2 rounded-md hover:bg-[#196C64] transition-colors shadow-md hover:shadow-lg"
         >
           Apply Filters
         </button>

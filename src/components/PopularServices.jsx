@@ -22,7 +22,7 @@ const services = [
 
 const PopularServices = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-12">
+    <section className="max-w-7xl mx-auto px-6 py-8">
       <h2 className="text-2xl font-semibold mb-8">Popular Services</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {services.map((service, index) => (
