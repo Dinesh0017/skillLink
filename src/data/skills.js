@@ -1,4 +1,4 @@
-import petImg from "../../public/assets/pet-care.jpg";
+import petImg from "../../public/assets/petCare.jpg";
 import cleaning1 from "../../public/assets/homeCleaning.jpg";
 import tutoringImg from "../../public/assets/tutoring.jpg";
 import handymanImg from "../../public/assets/handyman.jpg";
