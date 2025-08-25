@@ -15,13 +15,13 @@ const Navbar = () => {
 
         {/* Tablet & Desktop Menu */}
         <nav className="hidden sm:flex space-x-4 md:space-x-6 text-gray-700 font-medium">
-          <a href="#" className="hover:text-[#196C64] transition-colors">
+          <a href="/businesses" className="hover:text-[#196C64] transition-colors">
             For Businesses
           </a>
-          <a href="#" className="hover:text-[#196C64] transition-colors">
+          <a href="/explore" className="hover:text-[#196C64] transition-colors">
             Explore
           </a>
-          <a href="#" className="hover:text-[#196C64] transition-colors">
+          <a href="/become-a-pro" className="hover:text-[#196C64] transition-colors">
             Become a Pro
           </a>
         </nav>
