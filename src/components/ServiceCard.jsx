@@ -28,17 +28,16 @@ const ServiceCard = ({ service }) => {
             {service.rating} ({service.reviews} reviews)
           </p>
         </div>
-        <div className="flex items-center">
-          <div>
-            <button className="mt-2 px-4 py-1 font-semibold border border-[#196C64] text-[#196C64] rounded-md cursor-pointer">
-              View Profile
-            </button>
-          </div>
-          <div className="ml-40">
-            <button className="p-2  transition cursor-pointer">
+        <div className="flex items-center justify-between w-full">
+          <button className="mt-2 px-4 py-1 font-semibold border border-[#196C64] text-[#196C64] rounded-md cursor-pointer">
+            View Profile
+          </button>
+
+          <div className="flex space-x-2">
+            <button className="p-2 transition cursor-pointer">
               <Heart size={20} />
             </button>
-            <button className="p-2  transition cursor-pointer">
+            <button className="p-2 transition cursor-pointer">
               <Share2 size={20} />
             </button>
           </div>
