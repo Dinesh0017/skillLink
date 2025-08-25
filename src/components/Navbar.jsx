@@ -11,7 +11,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center py-3 px-4 lg:px-6">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="SkillLink" className="h-12" />
+          <Link to="/">
+            <img src={logo} alt="SkillLink" className="h-12" />
+          </Link>
         </div>
 
         {/* Tablet & Desktop Menu */}
