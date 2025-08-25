@@ -32,7 +32,7 @@ const ResultCard = ({ service }) => {
       </div>
 
       {/* Service details (Below carousel on mobile, Left on desktop) */}
-      <div className="flex-1 ml-3 leading-7 order-2 md:order-1">
+      <div className="flex-1 leading-7 order-2 md:order-1">
         <h3 className="text-lg font-semibold">
           {service.name}
           <span className="text-sm text-gray-500"> - {service.category}</span>

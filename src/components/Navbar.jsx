@@ -48,7 +48,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="sm:hidden bg-red-500 shadow-lg border-t animate-slideDown ">
+        <div className="sm:hidden bg-white shadow-lg border-t animate-slideDown ">
           <div className="py-4 px-6 space-y-4">
             <a
               href="#"
