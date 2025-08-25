@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/SkillLinkLogo.png";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,13 +16,13 @@ const Navbar = () => {
 
         {/* Tablet & Desktop Menu */}
         <nav className="hidden sm:flex space-x-4 md:space-x-6 text-gray-700 font-medium">
-          <Link href="/businesses" className="hover:text-[#196C64] transition-colors">
+          <Link to="/businesses" className="hover:text-[#196C64] transition-colors">
             For Businesses
           </Link>
-          <Link href="/explore" className="hover:text-[#196C64] transition-colors">
+          <Link to="/explore" className="hover:text-[#196C64] transition-colors">
             Explore
           </Link>
-          <Link href="/become-a-pro" className="hover:text-[#196C64] transition-colors">
+          <Link to="/become-a-pro" className="hover:text-[#196C64] transition-colors">
             Become a Pro
           </Link>
         </nav>
@@ -51,19 +52,19 @@ const Navbar = () => {
         <div className="sm:hidden bg-white shadow-lg border-t animate-slideDown ">
           <div className="py-4 px-6 space-y-4">
             <Link
-              href="/businesses"
+              to="/businesses"
               className="block text-gray-700 font-medium hover:text-[#196C64]"
             >
               For Businesses
             </Link>
             <Link
-              href="/explore"
+              to="/explore"
               className="block text-gray-700 font-medium hover:text-[#196C64]"
             >
               Explore
             </Link>
             <Link
-              href="/become-a-pro"
+              to="/become-a-pro"
               className="block text-gray-700 font-medium hover:text-[#196C64]"
             >
               Become a Pro
