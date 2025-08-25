@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/SkillLinkLogo.png";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,15 +15,15 @@ const Navbar = () => {
 
         {/* Tablet & Desktop Menu */}
         <nav className="hidden sm:flex space-x-4 md:space-x-6 text-gray-700 font-medium">
-          <a href="/businesses" className="hover:text-[#196C64] transition-colors">
+          <Link href="/businesses" className="hover:text-[#196C64] transition-colors">
             For Businesses
-          </a>
-          <a href="/explore" className="hover:text-[#196C64] transition-colors">
+          </Link>
+          <Link href="/explore" className="hover:text-[#196C64] transition-colors">
             Explore
-          </a>
-          <a href="/become-a-pro" className="hover:text-[#196C64] transition-colors">
+          </Link>
+          <Link href="/become-a-pro" className="hover:text-[#196C64] transition-colors">
             Become a Pro
-          </a>
+          </Link>
         </nav>
 
         {/* Tablet & Desktop Auth/Search */}
@@ -50,24 +50,24 @@ const Navbar = () => {
       {isOpen && (
         <div className="sm:hidden bg-white shadow-lg border-t animate-slideDown ">
           <div className="py-4 px-6 space-y-4">
-            <a
+            <Link
               href="/businesses"
               className="block text-gray-700 font-medium hover:text-[#196C64]"
             >
               For Businesses
-            </a>
-            <a
+            </Link>
+            <Link
               href="/explore"
               className="block text-gray-700 font-medium hover:text-[#196C64]"
             >
               Explore
-            </a>
-            <a
+            </Link>
+            <Link
               href="/become-a-pro"
               className="block text-gray-700 font-medium hover:text-[#196C64]"
             >
               Become a Pro
-            </a>
+            </Link>
             <div className="pt-4 border-t flex flex-col space-y-3 sm:space-y-0">
               <button className="bg-[#196C64]  px-4 py-2 rounded-lg text-white cursor-pointer hover:bg-green-800 transition-colors hover:shadow-lg">
                 Log in
