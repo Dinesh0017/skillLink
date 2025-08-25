@@ -51,19 +51,19 @@ const Navbar = () => {
         <div className="sm:hidden bg-white shadow-lg border-t animate-slideDown ">
           <div className="py-4 px-6 space-y-4">
             <a
-              href="#"
+              href="/businesses"
               className="block text-gray-700 font-medium hover:text-[#196C64]"
             >
               For Businesses
             </a>
             <a
-              href="#"
+              href="/explore"
               className="block text-gray-700 font-medium hover:text-[#196C64]"
             >
               Explore
             </a>
             <a
-              href="#"
+              href="/become-a-pro"
               className="block text-gray-700 font-medium hover:text-[#196C64]"
             >
               Become a Pro
