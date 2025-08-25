@@ -5,8 +5,8 @@ import { Heart, Share2 } from "lucide-react";
 
 const ResultCard = ({ service }) => {
   return (
-    <div className="rounded-lg p-4 flex flex-col md:flex-row items-center gap-4 shadow-lg hover:shadow-lg transition lg:mr-22 lg:-ml-16">
-      {/* Carousel*/}
+    <div className="rounded-lg p-4 flex flex-col md:flex-row items-start gap-4 shadow-lg hover:shadow-lg transition">
+      {/* Carousel */}
       <div className="w-full md:w-1/3 relative order-1 md:order-2">
         <Carousel showThumbs={false} infiniteLoop autoPlay>
           {service.images.map((img, idx) => (
@@ -20,19 +20,19 @@ const ResultCard = ({ service }) => {
           ))}
         </Carousel>
 
-        {/* ✅ Share & Favorite */}
-        <div className="absolute -bottom-1 lg:-left-25 flex space-x-2 ">
-          <button className="p-2 hover:bg-red-100 hover:text-red-600 transition cursor-pointer ">
+        {/* Share & Favorite buttons */}
+        <div className="absolute -bottom-1 lg:-left-25 flex space-x-2 md:space-x-3">
+          <button className="p-2 hover:bg-red-100 hover:text-red-600 transition rounded-md">
             <Heart size={20} />
           </button>
-          <button className="p-2 hover:bg-blue-100 hover:text-blue-600 transition cursor-pointer">
+          <button className="p-2 hover:bg-blue-100 hover:text-blue-600 transition rounded-md">
             <Share2 size={20} />
           </button>
         </div>
       </div>
 
-      {/* Service details (Below carousel on mobile, Left on desktop) */}
-      <div className="flex-1 leading-7 order-2 md:order-1">
+      {/* Service details */}
+      <div className="flex-1 leading-7 order-2 md:order-1 text-left w-full md:w-auto">
         <h3 className="text-lg font-semibold">
           {service.name}
           <span className="text-sm text-gray-500"> - {service.category}</span>
