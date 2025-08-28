@@ -7,16 +7,16 @@ This project was designed in **Figma** and developed with **React.js**, **Tailwi
 
 ---
 
-## 🌐 Live Preview  
+## 🌐 Live Preview and Design
 
-🚀 [**Launch SkillLink**](https://skilllink.vercel.app/)  
-🔗 [**GitHub Repo**](https://github.com/Dinesh0017/skilllink)  
+🚀 [**Launch SkillLink**](https://skill-link-iota.vercel.app/)  
+🔗 [**Figma**](https://www.figma.com/design/d4XEVitT3BXA2hHmUzWEeM/skill-link?node-id=0-1&t=qk94NDujeAHAB1V2-1) 
 
 ---
 
-## 🖼️ Preview  
+## 🖼️ Preview
 
-![Website Screenshot](https://github.com/Dinesh0017/skilllink/blob/main/preview.png)  
+![Website Screenshot](https://github.com/Dinesh0017/skillLink/blob/main/skill%20link%20home%201%20page.png)
 
 > 📷 The screenshot shows the Explore page. The platform is fully responsive and mobile-friendly.  
 
