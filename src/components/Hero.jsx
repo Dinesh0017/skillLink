@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative h-[600px] bg-cover bg-center flex items-center justify-center mt-16 mx-auto"
+      className="relative h-[650px] bg-cover bg-center flex items-center justify-center mt-16 mx-auto"
       style={{ backgroundImage: `url(${hero})` }}
     >
       <div className="absolute inset-0 bg-black opacity-25"></div>
@@ -31,7 +31,7 @@ const Hero = () => {
         <p className="mt-2">
           Millions of people use SkillLink to turn their ideas into reality.
         </p>
-        <div className="flex mt-6 max-w-lg mx-auto bg-white rounded-lg overflow-hidden p-1 relative">
+        <div className="flex mt-6  max-w-lg mx-4 sm:mx-auto bg-white rounded-lg overflow-hidden p-1 relative">
           <Search
             className="absolute left-3 top-1/2 -translate-y-1/2 text-black"
             size={18}
